@@ -9,15 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleConstraintLayout">
+        <activity android:name=".activity_daftar"
+            android:parentActivityName=".MainActivity"></activity>
+
         <activity
             android:name=".Register"
+            android:exported="false"
             android:label="@string/hRegister"
-            android:parentActivityName=".MainActivity"
-            android:exported="false" />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/hLogin"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/hLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
